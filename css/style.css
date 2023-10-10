@@ -121,11 +121,11 @@ nav a:hover, nav a:focus{
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip:focus{
   top: 20px;
-  display: block;
+  z-index: 999;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
-#main div:focus{
+*:focus{
   outline: 2px solid black;
 }
 
